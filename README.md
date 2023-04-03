@@ -17,6 +17,6 @@
 - [x] 2. Quick Start
 - [x] 3. Tic-Tac-Toe
 - [x] 4. Describing the UI
-- [ ] 5. Adding Interactivity
+- [x] 5. Adding Interactivity
 - [ ] 6. Managing State
 - [ ] 7. Escape Hatches
