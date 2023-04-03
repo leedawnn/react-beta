@@ -20,8 +20,8 @@ export default function Board({ xIsNext, squares, onPlay }: BoardProps) {
     } else {
       nextSquares[i] = 'O';
     }
-    setSquares(nextSquares);
-    setXIsNext(!xIsNext);
+    // setSquares(nextSquares);
+    // setXIsNext(!xIsNext);
   };
 
   const calculateWinner = (squares: string[]) => {

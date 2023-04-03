@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Board from '../App';
+// import Board from '../App';
 
 function Game() {
   const [xIsNext, setXIsNext] = useState(true);
@@ -12,9 +12,7 @@ function Game() {
 
   return (
     <div className='game'>
-      <div className='game-board'>
-        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
-      </div>
+      <div className='game-board'>{/* <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} /> */}</div>
       <div className='game-info'>
         <ol>{/*TODO*/}</ol>
       </div>
