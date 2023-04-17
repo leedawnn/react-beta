@@ -1,19 +1,29 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es6": true,
+    "node": true
   },
   "extends": ["plugin:react/recommended"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": 2018,
+    "ecmaVersion": 6,
     "sourceType": "module"
   },
-  "plugins": ["react"],
+  "plugins": ["react", "@typescript-eslint"],
   "rules": {
-    "no-console": "warn",
-    "@typescript-eslint/no-unused-vars": "off"
+    "no-unused-vars": "off",
+    "no-console": "off", // 콘솔로그를 사용할 수 있게 꺼놓겠다.
+    "no-else-return": ["error", { "allowElseIf": false }], // if문에 else문을 허용하지 않겠다.
+    "semi": [1, "always"],
+    "space-unary-ops": 2,
+    "react-in-jsx-scope": "off",
+    "no-unescaped-entities": "off"
   }
 }
